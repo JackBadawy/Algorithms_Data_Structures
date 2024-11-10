@@ -29,10 +29,7 @@ float calculateCompoundInterest(float principal, float rate, int timeMonths, Com
     float annualRate = rate * 0.01;
     float timeYears = timeMonths / 12.0;
 
-    if (freq == Continuous)
-    {
-        return principal * calculateEPower(annualRate * timeYears);
-    }
+    if (freq == Continuous) return principal * calculateEPower(annualRate * timeYears);
     else
     {
         float n = (float)freq;

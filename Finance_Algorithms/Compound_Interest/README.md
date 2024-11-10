@@ -1,4 +1,4 @@
-# Compound Interest Calculator
+# Compound Interest Program
 
 Compound interest is interest earned on both the initial principal and previously accumulated interest.
 
@@ -71,18 +71,14 @@ float calculateEPower(float x)
     float term = 1.0;
     int i;
 
-    for (i = 1; i <= 10; i++) {
+    for (i = 1; i <= 10; i++)
+    {
         term *= x / i;
         sum += term;
     }
     return sum;
 }
 ```
-
-## Complexity Analysis
-
-- Time Complexity: O(n) for discrete compounding, where n is the number of periods
-- Space Complexity: O(1)
 
 ## Usage
 
